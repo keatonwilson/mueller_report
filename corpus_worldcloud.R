@@ -21,4 +21,4 @@ corp = tm_map(corp, content_transformer(tolower))
 corp = tm_map(corp, function(x)removeWords(x,stopwords()))
 corp = tm_map(corp, function(x)removeNumbers(x))
 
-wc = wordcloud(corp, scale = c(4.5, 1), min.freq = 15, colors = "black", max.words = 100)
+wc = wordcloud(corp, scale = c(4.5, 1), min.freq = 15, colors = "black", max.words = 85)
